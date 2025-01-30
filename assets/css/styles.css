@@ -345,6 +345,7 @@ body.dark-theme {
 
 .home__button {
   box-shadow: 0 12px 24px hsla(0, 0%, 10%, 0.2);
+  animation: bounce 1.5s infinite;
 }
 
 /*=============== BUTTONS ===============*/
@@ -482,6 +483,10 @@ body.dark-theme {
 .products__container {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+  background: url('../img/libro-mistico.webp') no-repeat center center fixed;
+  background-size: cover;
+  padding: 1.5rem;
+
 }
 
 .products__card {
@@ -489,6 +494,7 @@ body.dark-theme {
   background-color: var(--container-color);
   padding: 1.25rem 0;
   border: 1px solid var(--border-color);
+  border-radius: 15px;
   text-align: center;
   transition: 0.3s;
 }
@@ -761,6 +767,11 @@ details[open] .faq-question::after {
 }
 
 /*=============== SCROLL UP ===============*/
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
 .scrollup {
   position: fixed;
   right: 1rem;
@@ -772,6 +783,7 @@ details[open] .faq-question::after {
   z-index: var(--z-tooltip);
   opacity: 0.8;
   transition: 0.4s;
+  animation: bounce 1.5s infinite;
 }
 
 .scrollup:hover {
@@ -780,13 +792,14 @@ details[open] .faq-question::after {
 
 .scrollup__icon {
   font-size: 2.5rem;
-  color: var(--first-color);
+  color: #55ec55;
 }
 
-/* Show Scroll Up*/
+/* Show Scroll Up */
 .show-scroll {
   bottom: 3rem;
 }
+
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
@@ -1037,7 +1050,8 @@ details[open] .faq-question::after {
 
 
 .responsive-container .container {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(39, 21, 21, 0.5);
+  background-size: cover;
   padding: 20px;
   margin-top: 1.5rem;
   display: flex;
@@ -1051,17 +1065,11 @@ details[open] .faq-question::after {
   background-size: cover;
 }
 
-.responsive-container .container h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin: 0;
-  text-shadow: 2px 2px 5px rgba(128, 0, 128, 0.8), 0 0 10px rgba(128, 0, 128, 0.5);
-}
-
 .responsive-container .container h2 {
   font-size: 2rem;
   font-weight: lighter;
   margin: 10px 0;
+  color: #fff;
   text-shadow: 2px 2px 5px rgba(128, 0, 128, 0.8), 0 0 8px rgba(128, 0, 128, 0.5);
 }
 
@@ -1072,6 +1080,25 @@ details[open] .faq-question::after {
   margin: 10px;
   text-shadow: 1px 1px 3px rgba(128, 0, 128, 0.8), 0 0 5px rgba(128, 0, 128, 0.4);
 }
+
+ /* Botón de WhatsApp */
+ .responsive-container .whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  background: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.responsive-container .whatsapp-button:hover {
+  background: #1EBE5D;
+}
+
 
 @media (max-width: 1024px) {
   .responsive-container .container {
@@ -1089,6 +1116,8 @@ details[open] .faq-question::after {
   .responsive-container .container p {
       font-size: 0.95rem;
   }
+
+
 }
 
 @media (max-width: 768px) {
@@ -1117,5 +1146,7 @@ details[open] .faq-question::after {
   .responsive-container .container p {
       font-size: 0.85rem;
   }
+
+  
 }
 

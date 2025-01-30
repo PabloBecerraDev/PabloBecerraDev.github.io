@@ -86,7 +86,9 @@
             <span class="home__price">Consulta personalizada y virtual </span>
 
             <div class="home__btns">
-              <a href="#" class="button home__button"> Consulta Gratis Ahora! </a>
+               <a href="https://wa.me/573001234567" target="_blank" class="button home__button">
+                Consulta Gratis Ahora!
+              </a>
             </div>
           </div>
         </div>
@@ -94,15 +96,20 @@
 
       <!--==================== ESPECIALIDADES ====================-->
 
-      <div class="responsive-container">
+    
+      <section class="responsive-container">
         <div class="container">
-            <h1>¿Por qué Elegir al Maestro?</h1>
+            <h2>¿Por qué Elegir al Maestro?</h2>
             <h2>Descubre el poder que ya te pertenece. ¡Reserva tu sesión ahora!</h2>
             <p>Magia Ancestral y Auténtica: Más de 20 años canalizando energías reales y ayudando a cientos de personas a transformar sus vidas.<br/>
               Lecturas 100% Personalizadas: Conecta con respuestas específicas a tus dudas más profundas. ¡Nada genérico, todo está diseñado para ti!<br/>
               Resultados Probados: Experiencias de clientes que han recuperado el equilibrio en su vida gracias a la sabiduría única del maestro medium.</p>
+              <a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">
+                <i class="fab fa-whatsapp"></i> CONSULTAR AHORA
+            </a>
+            
         </div>
-    </div>
+    </section>
     
 
       <section class="featured section container" id="featured">
@@ -170,7 +177,7 @@
 No esperes más para alcanzar la vida que siempre has soñado. ¡Haz tu consulta hoy y abre las puertas a un futuro lleno de posibilidades!
             </p>
 
-            <a href="#" class="button button--small">Consulta Gratis Ahora!</a>
+            <a href="https://wa.me/573001234567" target="_blank" class="button button--small">Consulta Gratis Ahora!</a>
           </div>
 
           <div class="story__images">
@@ -405,14 +412,21 @@ No esperes más para alcanzar la vida que siempre has soñado. ¡Haz tu consulta
             </p>
           </div>
 
-          <form action="" class="newsletter__subscribe">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              class="newsletter__input"
-            />
-            <button class="button">ENVIAR</button>
-          </form>
+          <form
+          action="https://formspree.io/f/mnnjvaqa"
+          method="POST"
+          class="newsletter__subscribe"
+        >
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            class="newsletter__input"
+            required
+          />
+          <!-- Campo oculto para redirección (opcional) -->
+          <button type="submit" class="button">ENVIAR</button>
+        </form>
         </div>
       </section>
     </main>
@@ -431,49 +445,10 @@ No esperes más para alcanzar la vida que siempre has soñado. ¡Haz tu consulta
         <div class="footer__content">
           <h3 class="footer__title">Servicios</h3>
 
-          <ul class="footer__links">
-            <li>
-              <a href="#" class="footer__link">Atraer al amor de vuelta</a>
-            </li>
-            <li>
-              <a href="#" class="footer__link">Eliminar estres y ansiedad</a>
-            </li>
-            <li>
-              <a href="#" class="footer__link">Conocer la pareja futura</a>
-            </li>
-            <li>
-              <a href="#" class="footer__link">Limpieza espiritual</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer__content">
-          <h3 class="footer__title">Conectate con nosotros</h3>
-
-          <ul class="footer__social">
-            <a
-              href="https://www.facebook.com/"
-              target="_blank"
-              class="footer__social-link"
-            >
-              <i class="bx bxl-facebook"></i>
-            </a>
-
-            <a
-              href="https://twitter.com/"
-              target="_blank"
-              class="footer__social-link"
-            >
-              <i class="bx bxl-twitter"></i>
-            </a>
-
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              class="footer__social-link"
-            >
-              <i class="bx bxl-instagram"></i>
-            </a>
+          <ul class="footer__list">
+            <li>Estos servicios no reemplazan atención médica, legal o psicológica.</li>
+            <li>Las llamadas o mensajes pueden tener costos según tu operador.</li>
+            <li>La consulta es gratis; puedes solicitar información de los servicios.</li>            
           </ul>
         </div>
       </div>
@@ -481,8 +456,9 @@ No esperes más para alcanzar la vida que siempre has soñado. ¡Haz tu consulta
       <span class="footer__copy">&#169; 2025. All rigths reserved</span>
     </footer>
 
-    <!--=============== SCROLL UP ===============-->
-    <a href="#" class="scrollup" id="scroll-up">
+    <!--=============== WHATSAPP ===============-->
+    
+      <a href="https://wa.me/573001234567" target="_blank" class="scrollup" id="scroll-up">
       <i class="bx bxl-whatsapp-square scrollup__icon"></i>
     </a>
 
